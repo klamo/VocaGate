@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "profile_id": "android-mlkit-v1-2026-06-29",
+  "engine": "android-mlkit-v1",
+  "version": "2026.06.29",
+  "min_app_version": "0.1.0",
+  "notes": "Baseline Android ML Kit profile. Engine code ships with the APK; this file only tunes thresholds and weights.",
+  "gate": {
+    "open_threshold": 0.56,
+    "pre_open_threshold": 0.46,
+    "close_threshold": 0.32,
+    "pre_open_required_frames": 2,
+    "close_required_frames": 6,
+    "min_open_ms": 320,
+    "hold_ms": 760,
+    "cooldown_ms": 180
+  },
+  "score": {
+    "rhythm_weight": 0.44,
+    "open_weight": 0.28,
+    "frontal_weight": 0.18,
+    "stability_weight": 0.10,
+    "occlusion_penalty_weight": 0.34,
+    "long_open_penalty_weight": 0.24
+  },
+  "first_word": {
+    "enabled": true,
+    "rise_threshold": 0.055,
+    "hold_ms": 180
+  }
+}

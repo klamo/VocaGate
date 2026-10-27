@@ -1,0 +1,14 @@
+VocaGate desktop release third-party notices
+
+MediaPipe sidecar
+- MediaPipe: Apache-2.0
+- NumPy: BSD-3-Clause
+- PyInstaller: GPL-2.0-or-later with the bootloader exception
+
+Desktop Java dependencies
+- OpenCV / JavaCPP / OpenBLAS packages: Apache-2.0 or their upstream licenses
+- webcam-capture: Apache-2.0
+- SLF4J: MIT
+
+The packaged MediaPipe model provenance and SHA-256 are recorded in
+sidecar/face_landmarker.lock.json beside this application bundle.

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "channel": "stable",
+  "generated_at": "2026-06-29T00:00:00Z",
+  "expires_at": "2026-07-29T00:00:00Z",
+  "assets": [
+    {
+      "id": "android-mlkit-profile-stable",
+      "kind": "profile",
+      "engine": "android-mlkit-v1",
+      "platform": "android",
+      "version": "2026.06.29",
+      "min_app_version": "0.1.0",
+      "url": "/v1/profiles/android-mlkit-v1/2026-06-29.json",
+      "sha256": "f6c3eac77d34e2d967adf51bdd48992c2cbd98158b8c49e3d181be918938d294",
+      "signature": "REPLACE_WITH_DETACHED_ED25519_SIGNATURE_BASE64",
+      "size_bytes": 821
+    },
+    {
+      "id": "desktop-mediapipe-profile-stable",
+      "kind": "profile",
+      "engine": "desktop-mediapipe-v1",
+      "platform": "desktop",
+      "version": "2026.06.29",
+      "min_app_version": "0.1.0",
+      "url": "/v1/profiles/desktop-mediapipe-v1/2026-06-29.json",
+      "sha256": "2151184cd5de3f2c6097f6ff16b07d3faa12aa5af99d26b82d88ea2bfc450fd2",
+      "signature": "REPLACE_WITH_DETACHED_ED25519_SIGNATURE_BASE64",
+      "size_bytes": 1058
+    },
+    {
+      "id": "desktop-mediapipe-face-landmarker",
+      "kind": "model",
+      "engine": "desktop-mediapipe-v1",
+      "platform": "desktop",
+      "version": "2026.06.29",
+      "min_app_version": "0.1.0",
+      "url": "/v1/models/desktop-mediapipe/face_landmarker-2026-06-29.task",
+      "sha256": "REPLACE_WITH_SHA256_HEX",
+      "signature": "REPLACE_WITH_DETACHED_ED25519_SIGNATURE_BASE64",
+      "size_bytes": 0
+    }
+  ]
+}

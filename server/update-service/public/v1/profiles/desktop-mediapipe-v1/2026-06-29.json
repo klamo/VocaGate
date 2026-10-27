@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "profile_id": "desktop-mediapipe-v1-2026-06-29",
+  "engine": "desktop-mediapipe-v1",
+  "version": "2026.06.29",
+  "min_app_version": "0.1.0",
+  "notes": "Baseline desktop MediaPipe profile. Engine code ships with the desktop app; this file tunes Java gate thresholds and future sidecar weights.",
+  "gate": {
+    "open_threshold": 0.18,
+    "pre_open_threshold": 0.08,
+    "close_threshold": 0.08,
+    "pre_open_required_frames": 3,
+    "close_required_frames": 4,
+    "min_open_ms": 250,
+    "hold_ms": 300,
+    "cooldown_ms": 150
+  },
+  "score": {
+    "rhythm_weight": 0.45,
+    "open_weight": 0.25,
+    "frontal_weight": 0.20,
+    "stability_weight": 0.10,
+    "occlusion_penalty_weight": 0.35,
+    "long_open_penalty_weight": 0.25
+  },
+  "first_word": {
+    "enabled": true,
+    "rise_threshold": 0.055,
+    "hold_ms": 180
+  },
+  "mediapipe_sidecar": {
+    "mouth_open_baseline": 0.025,
+    "mouth_open_span": 0.12,
+    "center_motion_suppression": 1.15,
+    "aperture_motion_scale": 0.028,
+    "lip_motion_scale": 0.018
+  }
+}

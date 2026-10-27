@@ -1,0 +1,22 @@
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+captures/
+externalNativeBuild/
+.cxx/
+.venv-mediapipe/
+__pycache__/
+desktop/src/main/python/models/*.task
+release/
+release-signing.properties
+*.jks
+*.keystore
+desktop/build/release-staging/
+desktop/build/sidecar/
+
+# Personal discussions and raw demo materials stay private
+/docs/other/

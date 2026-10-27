@@ -1,0 +1,19 @@
+updates.example.com {
+    root * /srv/vocagate-updates/public
+    file_server
+
+    header {
+        X-Content-Type-Options nosniff
+    }
+
+    @manifest path /v1/manifest.json /v1/manifest.json.sig
+    header @manifest Cache-Control "no-store"
+
+    @immutable path /v1/profiles/* /v1/models/*
+    header @immutable Cache-Control "public, max-age=31536000, immutable"
+
+    log {
+        output file /srv/vocagate-updates/logs/access.log
+        format json
+    }
+}
